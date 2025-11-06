@@ -16,6 +16,9 @@ public class MatrixTask {
             // результуюча матриця C = B^T
             float[][] cMatrix = transpose(bMatrix);
 
+            System.out.println("Transposed matrix:");
+            printMatrix(cMatrix);
+
             float sum = calculateSum(cMatrix);
 
             System.out.println("\nSum (even columns — max, odd columns — min): " + sum);
